@@ -12,4 +12,18 @@ describe "A movie" do
 
 		expect(movie.flop?).to be_false
 	end
+
+	it "is released when the released on date is in the past" do
+  	movie = Movie.create(movie_attributes(released_on: 3.months.ago))
+ 
+  	expect(Movie.released).to include(movie)
+	end
+
+	it "is has not been released yet when the released date is in the future" do
+		movie = Movie.create(movie_attributes(released_on: 3.months.from_now))
+
+		expect(Movie.released).not_to include(movie)
+	end
+
+
 end
