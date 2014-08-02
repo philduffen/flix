@@ -1,5 +1,6 @@
 <h1>Movie</h1>
 <p>
+<h2><%= image_for(@movie) %></h2>
   <article>
     <header>
       <h2><%= @movie.title %></h2>
@@ -7,7 +8,21 @@
     <p>
       <%= @movie.description %>
     </p>
-    <table>
+    <h3>Cast</h3>
+    <p>
+    <%= @movie.cast %>
+    </p>
+
+    <h3>Director</h3>
+<p>
+  <%= @movie.director %>
+</p>
+
+<h3>Duration</h3>
+<p>
+  <%= @movie.duration %>
+</p>
+ <table>
       <tr>
         <th>Released:</th>
         <td><%= @movie.released_on %></td>
