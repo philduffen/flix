@@ -1,4 +1,4 @@
-def movie_attributes (overrides = {})
+def movie_attributes(overrides = {})
   {
     title: "Iron Man",
     rating: "PG-13",

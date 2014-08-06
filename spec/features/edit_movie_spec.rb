@@ -12,7 +12,7 @@ describe "Editing a movie" do
     expect(current_path).to eq(edit_movie_path(movie))
         
     expect(find_field('Title').value).to eq(movie.title)
-
+		
     fill_in 'Title', with: "Updated Movie Title"
     
     click_button 'Update Movie'
