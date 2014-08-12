@@ -20,6 +20,9 @@ describe "Editing a movie" do
     expect(current_path).to eq(movie_path(movie))
 
     expect(page).to have_text('Updated Movie Title')
+
+    expect(page).to have_text('Movie successfully updated!')
+
   end
   
   it "does not update the movie if it's invalid" do
@@ -33,5 +36,5 @@ describe "Editing a movie" do
           
     expect(page).to have_text('error')
   end
-  
+
 end

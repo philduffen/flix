@@ -198,6 +198,14 @@ ol#reviews {
   &.alert {
     background-color: $flash-alert-color;
   }
+
+  &.oops {
+    background-color: $oops-alert-color;
+  }
+
+  &.danger {
+    background-color: $flash-danger-color;
+  }
 }
 
 /* ERRORS */
