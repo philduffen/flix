@@ -14,6 +14,10 @@ group :production do
 	gem 'pg'
 end
 
+# Include 'rails_12factor' gem to enable all platform features
+# See https://devcenter.heroku.com/articles/rails-integration-gems for more information.
+gem 'rails_12factor'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
